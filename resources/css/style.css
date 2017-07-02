@@ -220,3 +220,6 @@ article:last-child a{
 		justify-content: center;
 		align-items: stretch;
 }
+.courses article {
+    max-width: 25%;}
+.courses img {max-width: 100%;}
