@@ -5,10 +5,6 @@ html{
     color:#2E343B;
 }
 
-body{
-
-}
-
 /* Typography */
 
 h1,h2,h3,h4{
@@ -66,7 +62,7 @@ container{
    
 }
 
-.menu ul.mobile-menu{
+.mobile-menu{
     display: none;
 }
 
@@ -148,11 +144,15 @@ a.button:hover{
 }
 
 @media only screen and (max-width: 700px){
-    .menu ul.mobile-menu {
-        display: flex;
-        align-items: center;
+    .mobile-menu {
+		display: flex;
+        width:100%;
         justify-content: space-between;
-    }
+        padding:0 rem;
+		}
+    nav div{
+    padding: 0 ;
+}
     .menu ul{
         display: none;
     }
@@ -257,6 +257,10 @@ article p{
         width: 100%;
         padding:1rem;
     }
+    .col-two article .article-view{
+       width:100%;
+        margin-left:1rem;
+    }
     .inspo .col-two article:last-child{
     background-color: #fff; 
     color:#2E343B;      
@@ -348,6 +352,12 @@ align-items: center;}
     .vid-hero{
     margin: 0;
     width:100%;
+}
+    .thesis h2{
+        padding-top:2rem;
+    }
+    .thesis{
+    padding:0;
 }
 }
 
