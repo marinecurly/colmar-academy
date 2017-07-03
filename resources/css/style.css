@@ -70,6 +70,12 @@ container{
     display: none;
 }
 
+.signin{
+    border: 1px solid #3455DB;
+    border-radius: 2.5rem;
+    padding: 0.4rem 1.9rem;
+}
+
 .flex{
     display: flex;
 }
@@ -97,7 +103,7 @@ a.button, a.button-start{
     text-decoration: none;
     background-color:#3455DB;
     border: none;
-    border-radius: 4px;
+    border-radius: 2.5rem;
     font-size: 1rem;
     padding: 1rem 5rem;
 }
@@ -181,11 +187,11 @@ article p{
     font-weight:700;
 }
 
-.col-two article:first-child{
+.inspo .col-two article:first-child{
    padding-top: 0rem;
 }
 
-.col-two article:last-child{
+.inspo .col-two article:last-child{
     background-color: #2E343B; 
     color:#fff;
 }
@@ -246,4 +252,40 @@ align-items: center;}
 .uppercase{
     text-transform: uppercase;
     padding: 0.5rem 0;
+}
+
+/* Thesis Section */
+
+.thesis{
+    padding:2rem 1.5rem;
+}
+.thesis h2{
+    text-align: center;
+}
+.thesis video{
+    max-width: 100%;
+}
+.thesis .col-two article:first-child{
+    background-color: #2E343B; 
+    color:#fff;
+}
+
+/* Footer */
+
+footer{
+    background-color: #2E343B;
+    padding: 2rem 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+footer p, footer a{
+    padding-right:0.5rem;
+    font-size: 0.7rem;
+    color:white;
+    text-decoration: none;
+}
+
+footer ul li{
+    display: inline;
 }
