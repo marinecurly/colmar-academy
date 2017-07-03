@@ -143,15 +143,38 @@ a.button:hover{
     color:#3455DB;
 }
 
+.mobile{
+    display:none;
+}
+
 @media only screen and (max-width: 700px){
     .menu ul.mobile-menu {
-    display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .menu ul{
-    display: none;
+        display: none;
     }
     .logo{
-    display: none;
+        display: none;
+    }
+    .main-banner{
+        flex-direction: column;
+        padding:0;
+    }
+    .main-banner img{
+       margin:0;
+        width:100%;
+    }
+    .content-banner{
+        padding:2rem 1rem 4rem 1rem;
+    }
+    .mobile{
+        display:block;
+    }
+    .desktop{
+        display:none;
     }
 }
 
@@ -187,6 +210,10 @@ article p{
     font-weight:700;
 }
 
+.col-two article a:hover{
+   color:#3D63FF; 
+}
+
 .inspo .col-two article:first-child{
    padding-top: 0rem;
 }
@@ -216,6 +243,30 @@ article p{
 .col-two{
     max-width:423px;
 }
+
+@media only screen and (max-width: 700px){
+    
+    .hero{
+        display:none;
+    }
+   
+    .col-two article{
+    flex-direction: column;
+        }
+    .col-two article img{
+        width: 100%;
+        padding:1rem;
+    }
+    .inspo .col-two article:last-child{
+    background-color: #fff; 
+    color:#2E343B;      
+}
+    .col-two article:last-child a{
+    color: #3455DB;
+}
+}
+
+
 
 /* Course Section */
 
@@ -254,6 +305,25 @@ align-items: center;}
     padding: 0.5rem 0;
 }
 
+@media only screen and (max-width: 700px){
+    
+    .flex.wrap{
+        flex-direction: column;
+    }
+    .courses article {
+        max-width:100%;
+        background-color: #3455DB;
+        padding:1rem;
+        margin:0.5rem;
+    }
+    .courses article h3{
+        color: #fff;
+    }
+    
+}
+
+
+
 /* Thesis Section */
 
 .thesis{
@@ -269,17 +339,30 @@ align-items: center;}
     background-color: #2E343B; 
     color:#fff;
 }
+.vid-hero{
+    margin-right: 1.5rem;
+    width:64%;
+}
+
+@media only screen and (max-width: 700px){
+    .vid-hero{
+    margin: 0;
+    width:100%;
+}
+}
+
 
 /* Footer */
 
 footer{
     background-color: #2E343B;
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
 footer p, footer a{
+    padding-top:1rem
     padding-right:0.5rem;
     font-size: 0.7rem;
     color:white;
