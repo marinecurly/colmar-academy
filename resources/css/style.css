@@ -31,6 +31,7 @@ h3{
     font-size: 1.4rem;
     font-weight: 700;
     padding-bottom: 0.5rem;
+   
 }
 
 /* Header */
@@ -163,7 +164,7 @@ a.button:hover{
     width:100%;
 }
 
-article{
+.col-two article{
     display: flex;
     padding: 1rem;
     align-items: center;
@@ -174,22 +175,22 @@ article p{
     margin-bottom: 0.5rem;
 }
 
-article a {
+.col-two article a {
     text-decoration: none;
     color: #3455DB;
     font-weight:700;
 }
 
-article:first-child{
+.col-two article:first-child{
    padding-top: 0rem;
 }
 
-article:last-child{
+.col-two article:last-child{
     background-color: #2E343B; 
     color:#fff;
 }
 
-article:last-child a{
+.col-two article:last-child a{
     color:#fff;
 }
 
@@ -214,12 +215,35 @@ article:last-child a{
 
 .courses{
     flex-direction: column;
+     padding:2rem 1.5rem;
+    display: flex;
+    background-color: #fafafa;
+    align-content: center;
+}
+.courses h2{
+    text-align: center;
+}
+
+.courses h3{
+     color: #3455DB;
 }
 .wrap{
     flex-wrap: wrap;
-		justify-content: center;
-		align-items: stretch;
+    justify-content: center;
+    align-items: stretch;
 }
 .courses article {
-    max-width: 25%;}
+max-width: 25%;
+background-color: #fff;
+margin: 1rem;
+align-items: center;}
+
 .courses img {max-width: 100%;}
+
+.course-content{
+    padding:1rem;
+}
+.uppercase{
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+}
